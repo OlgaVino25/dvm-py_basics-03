@@ -46,5 +46,5 @@ message = message.encode("UTF-8")
 context = ssl.create_default_context()
 
 with smtplib.SMTP_SSL(smt_server, port, context=context) as server:
-	server.login(login, password)
-	server.sendmail(sender, receiver, message)
+    server.login(login, password)
+    server.sendmail(sender, receiver, message)
